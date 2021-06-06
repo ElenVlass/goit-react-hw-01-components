@@ -1,9 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import avatarImage from './person.svg';
+import './Friend.css';
+
+const styles = {
+  online: {
+    backgroundColor: 'green',
+  },
+  offline: {
+    backgroundColor: 'red',
+  }
+}
 
 const Friend = ({avatar, name, isOnline}) => 
-  (<div><span className="status">{isOnline? "on" : "off"}</span>
+  (<div className="Friend"><span className="status" style={isOnline? styles.online : styles.offline}></span>
   <img className="avatar" src={avatar} alt="Аватар друга" width="48" />
   <p className="name">{name}</p></div>)
 ;
