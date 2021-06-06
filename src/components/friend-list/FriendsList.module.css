@@ -1,11 +1,9 @@
 .FriendsList {
   padding: 0;
-  margin: 0;
   list-style: none;
-  max-width: 1170px;
   display: flex;
   flex-direction: column;
-  margin: -10px auto;
+  margin: -10px 25px;
 }
 
 .FriendsList__item {

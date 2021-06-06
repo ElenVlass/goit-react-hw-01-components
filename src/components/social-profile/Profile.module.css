@@ -8,40 +8,40 @@
   margin-left: 25px;
 }
 
-.Profile-description {
+.Profile_description {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Profile-description__avatar {
+.Profile_description__avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   background-color: rgb(155, 126, 126);
 }
-.Profile-description__name {
+.Profile_description__name {
   font-weight: bold;
 }
-.Profile-description__tag {
+.Profile_description__tag {
   color: rgb(56, 54, 54);
 }
-.Profile-description__location {
+.Profile_description__location {
   color: rgb(56, 54, 54);
 }
-.Profile-stats {
+.Profile_stats {
   list-style: none;
   display: flex;
   flex-direction: row;
   padding: 0;
 }
-.Profile-stats__label {
+.Profile_stats__label {
   color: rgb(56, 54, 54);
   margin-bottom: 10px;
 }
-.Profile-stats__quantity {
+.Profile_stats__quantity {
   font-weight: bold;
 }
-.Profile-stats__item {
+.Profile_stats__item {
   display: flex;
   flex-direction: column;
   align-items: center;

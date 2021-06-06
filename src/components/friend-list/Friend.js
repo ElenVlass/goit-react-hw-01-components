@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import avatarImage from './person.svg';
-import './Friend.css';
+import styles from './Friend.module.css';
 
-const styles = {
+const styleForStatus = {
   online: {
     backgroundColor: 'green',
   },
@@ -13,9 +13,9 @@ const styles = {
 }
 
 const Friend = ({avatar, name, isOnline}) => 
-  (<div className="Friend"><span className="status" style={isOnline? styles.online : styles.offline}></span>
-  <img className="avatar" src={avatar} alt="Аватар друга" width="48" />
-  <p className="name">{name}</p></div>)
+  (<div className={styles.Friend}><span className={styles.status} style={isOnline? styleForStatus.online : styleForStatus.offline}></span>
+  <img src={avatar} alt="Аватар друга" width="48" />
+  <p>{name}</p></div>)
 ;
 
 Friend.defaultProps = {
