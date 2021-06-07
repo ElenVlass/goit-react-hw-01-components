@@ -4,6 +4,7 @@ import Friendslist from './components/friend-list/FriendList';
 import Profile from './components/social-profile/Profile';
 import Statistics from './components/statistics/Statistics';
 import TransactionHistory from './components/transaction-history/TransactionHistory';
+import Container from './components/container/Container';
 
 import user from './components/social-profile/user.json';
 import friends from './components/friend-list/friends.json';
@@ -12,7 +13,7 @@ import transactions from './components/transaction-history/transactions.json';
 
 const App = () => {
     return (
-    <>
+    <Container>
 
         <Profile 
         name={user.name}
@@ -33,7 +34,7 @@ const App = () => {
         <TransactionHistory 
         items={transactions}/>
  
-    </>
+    </Container>
     );
 };
 
