@@ -4,9 +4,9 @@ import styles from './Statistics.module.css';
 
 const Statistics = ({title, stats}) => (
 <section className={styles.statistics}>
-{title && <h2 className={styles.statistics_title}>{title}</h2>}
+  {title && <h2 className={styles.statistics_title}>{title}</h2>}
   <ul className={styles.stat_list}>
-{stats.map(({id, label, percentage}) => (<li key={id} className={styles.stat_item}>
+    {stats.map(({id, label, percentage}) => (<li key={id} className={styles.stat_item}>
       <span className={styles.stat_label}>{label}</span>
       <span className={styles.stat_percentage}>{percentage}</span>
     </li>))

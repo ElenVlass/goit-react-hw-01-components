@@ -13,7 +13,12 @@ const styleForStatus = {
 }
 
 const Friend = ({avatar, name, isOnline}) => 
-  (<div className={styles.Friend}><span className={styles.status} style={isOnline? styleForStatus.online : styleForStatus.offline}></span>
+  (<div className={styles.Friend}>
+    <span className={styles.status} 
+      style={isOnline? 
+        styleForStatus.online :  
+        styleForStatus.offline}>
+    </span>
   <img src={avatar} alt="Аватар друга" width="48" />
   <p>{name}</p></div>)
 ;
